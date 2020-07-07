@@ -1,4 +1,4 @@
-package Model;
+package org.apache.maven.archetypes.spaceInvader.Model;
 
 import java.awt.Graphics;
 

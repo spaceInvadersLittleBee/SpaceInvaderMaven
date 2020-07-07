@@ -1,8 +1,8 @@
-package Model;
+package org.apache.maven.archetypes.spaceInvader.Model;
 
 import javax.swing.ImageIcon;
 
-import Controller.GameBoard;
+import org.apache.maven.archetypes.spaceInvader.Controller.GameBoard;
 
 public class Player extends Character implements Friendly{
 	
@@ -17,7 +17,7 @@ public class Player extends Character implements Friendly{
 	@Override
 	public void shoot() {
 		
-		Bullet bullet=new PlayerBullet((int)this.x+25,(int)this.y+25,10, 10,bulletSpeed,100);//²ÎÊý´æÒÉ
+		Bullet bullet=new PlayerBullet((int)this.x+25,(int)this.y+25,10, 10,bulletSpeed,100);//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 		GameBoard.getGameBoard().getPlayerBullets().add((PlayerBullet) bullet);
 	}
 

@@ -1,6 +1,6 @@
-package Model;
+package org.apache.maven.archetypes.spaceInvader.Model;
 
-import Controller.GameBoard;
+import org.apache.maven.archetypes.spaceInvader.Controller.GameBoard;
 
 public class Trace implements MovePattern{
 	

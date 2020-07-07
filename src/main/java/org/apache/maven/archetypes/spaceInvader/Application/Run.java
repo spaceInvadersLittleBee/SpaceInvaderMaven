@@ -1,6 +1,6 @@
-package Application;
+package org.apache.maven.archetypes.spaceInvader.Application;
 
-import Controller.GameBoard;
+import org.apache.maven.archetypes.spaceInvader.Controller.GameBoard;
 
 public class Run {
 

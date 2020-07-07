@@ -1,4 +1,4 @@
-package Controller;
+package org.apache.maven.archetypes.spaceInvader.Controller;
 
 import java.awt.Image;
 import java.awt.event.ActionEvent;
@@ -11,11 +11,11 @@ import java.util.function.Predicate;
 import javax.swing.ImageIcon;
 import javax.swing.Timer;
 
-import View.View;
-import Model.Enemy;
-import Model.EnemyBullet;
-import Model.Player;
-import Model.PlayerBullet;
+import org.apache.maven.archetypes.spaceInvader.View.View;
+import org.apache.maven.archetypes.spaceInvader.Model.Enemy;
+import org.apache.maven.archetypes.spaceInvader.Model.EnemyBullet;
+import org.apache.maven.archetypes.spaceInvader.Model.Player;
+import org.apache.maven.archetypes.spaceInvader.Model.PlayerBullet;
 
 public class GameBoard {
 	

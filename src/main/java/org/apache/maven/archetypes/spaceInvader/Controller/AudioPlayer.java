@@ -1,4 +1,4 @@
-package Controller;
+package org.apache.maven.archetypes.spaceInvader.Controller;
 
 import java.io.File;
 

@@ -1,6 +1,6 @@
-package Controller;
+package org.apache.maven.archetypes.spaceInvader.Controller;
 
-import Model.Trace;
+import org.apache.maven.archetypes.spaceInvader.Model.Trace;
 
 public class MovementPolicy {
 	

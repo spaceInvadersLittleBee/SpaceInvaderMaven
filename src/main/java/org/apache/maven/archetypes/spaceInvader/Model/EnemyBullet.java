@@ -1,8 +1,8 @@
-package Model;
+package org.apache.maven.archetypes.spaceInvader.Model;
 
 import javax.swing.ImageIcon;
 
-import Controller.GameBoard;
+import org.apache.maven.archetypes.spaceInvader.Controller.GameBoard;
 
 public class EnemyBullet extends Bullet implements Hostile{
 	

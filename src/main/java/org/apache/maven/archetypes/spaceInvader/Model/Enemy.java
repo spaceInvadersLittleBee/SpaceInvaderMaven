@@ -1,10 +1,10 @@
-package Model;
+package org.apache.maven.archetypes.spaceInvader.Model;
 
 import java.awt.Toolkit;
 
 import javax.swing.ImageIcon;
 
-import Controller.GameBoard;
+import org.apache.maven.archetypes.spaceInvader.Controller.GameBoard;
 
 public class Enemy extends Character implements Hostile{
 	private int value;

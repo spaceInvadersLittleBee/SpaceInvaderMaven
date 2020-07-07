@@ -1,9 +1,9 @@
-package View;
+package org.apache.maven.archetypes.spaceInvader.View;
 
 import java.awt.*;
 import java.awt.event.*;
 import javax.swing.*;
-import Controller.GameBoard;
+import org.apache.maven.archetypes.spaceInvader.Controller.GameBoard;
 
 public class View extends JFrame {
 

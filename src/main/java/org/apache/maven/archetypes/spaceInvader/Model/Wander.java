@@ -1,4 +1,4 @@
-package Model;
+package org.apache.maven.archetypes.spaceInvader.Model;
 
 public class Wander implements MovePattern{
 
