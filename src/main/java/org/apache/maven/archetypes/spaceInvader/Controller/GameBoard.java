@@ -14,6 +14,7 @@ import javax.swing.Timer;
 import org.apache.maven.archetypes.spaceInvader.View.View;
 import org.apache.maven.archetypes.spaceInvader.Model.Enemy;
 import org.apache.maven.archetypes.spaceInvader.Model.EnemyBullet;
+import org.apache.maven.archetypes.spaceInvader.Model.Medkit;
 import org.apache.maven.archetypes.spaceInvader.Model.Player;
 import org.apache.maven.archetypes.spaceInvader.Model.PlayerBullet;
 
@@ -27,6 +28,7 @@ public class GameBoard {
 		private List<Enemy> enemies;
 		private List<PlayerBullet> playerBullets;
 		private List<EnemyBullet> enemyBullets;
+		private List<Medkit> medkits;
 		private int coolingTime;
 		private int cd;
 		private int score=0;
@@ -55,6 +57,9 @@ public class GameBoard {
 		}
 		public List<EnemyBullet> getEnemyBullets(){
 			return enemyBullets;
+		}
+		public List<Medkit> getMedkits(){
+			return medkits;
 		}
 		public int getNumberOfTrace() {
 			return numberOfTrace;
@@ -97,6 +102,7 @@ public class GameBoard {
 			gameBoard.enemies = new LinkedList<Enemy>();
 			gameBoard.enemyBullets = new LinkedList<EnemyBullet>();
 			gameBoard.playerBullets = new LinkedList<PlayerBullet>();
+			gameBoard.medkits= new LinkedList<>();
 			gameBoard.movementPolicy = new MovementPolicy();
 			gameBoard.coolingTime = 300;
 			gameBoard.frameTime = 17;
@@ -206,6 +212,16 @@ public class GameBoard {
 	    	}
 	    }
 	    
+	    public void hasMedkit() {
+	    	if(!medkits.isEmpty()) {
+	            for(Medkit m:medkits) {
+		            if(m.onCollisionPlayer()) {
+		            	player.getMedkit();
+		            }
+	            }
+	    	}    
+	    }
+	    
 	    private void loadNewLevel() {
 	    	numberOfTrace = 0;
 	    	enemies.clear();
@@ -214,10 +230,6 @@ public class GameBoard {
                     enemies.add(new Enemy(65+column*100, 50*row, 50,50,1, 100,100));
                 }
             } 
-
-	    	/*for(int i = 0; i<5; i++) {
-	    		enemies.add(new Enemy(100+i*200, 50, 100,100,1.5, 100,100));
-	    	}*/
 	    }
 	    
 	    public void endGame() {

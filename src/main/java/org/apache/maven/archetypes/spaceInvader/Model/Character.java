@@ -16,6 +16,9 @@ public abstract class Character extends GameObject{
 
 	public void loseHP(int hP) {
 		HP -= hP;
+		
+	}	public void getHP(int hP) {
+		HP += hP;
 	}
 	
 	public abstract void shoot();

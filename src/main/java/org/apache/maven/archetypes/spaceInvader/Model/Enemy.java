@@ -44,6 +44,10 @@ public class Enemy extends Character implements Hostile{
 	public void setMovePattern(MovePattern movePattern) {
 		this.movePattern = movePattern;
 	}
+	
+	public MovePattern getMovePattern() {
+		return movePattern;
+	}
 
 	
 

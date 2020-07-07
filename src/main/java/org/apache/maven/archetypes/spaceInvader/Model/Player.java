@@ -17,7 +17,7 @@ public class Player extends Character implements Friendly{
 	@Override
 	public void shoot() {
 		
-		Bullet bullet=new PlayerBullet((int)this.x+25,(int)this.y+25,10, 10,bulletSpeed,100);//��������
+		Bullet bullet=new PlayerBullet((int)this.x+25,(int)this.y+25,10, 10,bulletSpeed,100);
 		GameBoard.getGameBoard().getPlayerBullets().add((PlayerBullet) bullet);
 	}
 
@@ -34,7 +34,9 @@ public class Player extends Character implements Friendly{
 		if(HP<=0)GameBoard.getGameBoard().endGame();
 	}
 
-	
+	public void getMedkit() {	
+		getHP(1);
+	}	
 
 
 }

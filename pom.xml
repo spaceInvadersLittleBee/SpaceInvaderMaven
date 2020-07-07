@@ -78,6 +78,17 @@
 			<version>${junit.version}</version>
 			<scope>test</scope>
 		</dependency>
+		<dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>4.13</version>
+        </dependency>
+		<dependency>
+		  	<groupId>org.easymock</groupId>
+		  	<artifactId>easymock</artifactId>
+		 	<version>4.2</version>
+		  	<scope>test</scope>
+		</dependency>
 
 		<!--  JETTY DEPENDENCIES FOR TESTING  -->
 		<dependency>
@@ -188,3 +199,4 @@
 		</repository>
 	</repositories>
 	</project>
+
