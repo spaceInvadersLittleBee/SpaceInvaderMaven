@@ -35,7 +35,7 @@ public class Player extends Character implements Friendly{
 	}
 
 	public void getMedkit() {	
-		getHP(1);
+		addHP(1);
 	}	
 
 
