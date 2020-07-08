@@ -31,9 +31,9 @@ public class Enemy extends Character implements Hostile{
 	public void OnCollision(Friendly collider) {
 		collider.hitEnemy(this);
 		if(movePattern instanceof Trace)GameBoard.getGameBoard().traceMinus();
-		disable();
+		
 		if(HP<=0) {
-			
+			disable();
 		}
 	}
 	

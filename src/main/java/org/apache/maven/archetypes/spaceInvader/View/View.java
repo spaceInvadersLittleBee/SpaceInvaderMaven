@@ -1,5 +1,6 @@
 package org.apache.maven.archetypes.spaceInvader.View;
 
+
 import java.awt.*;
 import java.awt.event.*;
 import javax.swing.*;

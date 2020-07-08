@@ -31,4 +31,31 @@ public class UnitTest {
 		enemy.setMovePattern(mp);
 		assertEquals(mp,enemy.getMovePattern());
 	}
+	@Test
+	public void testLoseHP() {
+		Enemy enemy = new Enemy(165, 50, 50,50,1, 100,100);
+		enemy.loseHP(30);
+		assertEquals(70,enemy.getHP());
+	}
+	@Test
+	public void testHitByEnemy() {
+		GameBoard.getGameBoard().getPlayer().hitEnemy(new Enemy(165, 50, 50,50,1, 100,100));
+		assertFalse(GameBoard.getGameBoard().isRunning());
+	}
+	@Test
+	public void testMoveDir() {
+		GameBoard.getGameBoard().getPlayer().moveDir(1, 0);
+		assertEquals(GameBoard.getGameBoard().getPlayer().getX(), 455);
+	}
+	@Test
+	public void testGetValue() {
+		Enemy enemy = new Enemy(165, 50, 50,50,1, 100,100);
+		assertEquals(100,enemy.getValue());
+	}
+	@Test
+	public void testDisable() {
+		Enemy enemy = new Enemy(165, 50, 50,50,1, 100,100);
+		enemy.disable();
+		assertFalse(enemy.isEnabled());
+	}
 }

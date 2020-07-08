@@ -222,7 +222,7 @@ public class GameBoard {
 	    	}    
 	    }
 	    
-	    private void loadNewLevel() {
+	    public void loadNewLevel() {
 	    	numberOfTrace = 0;
 	    	enemies.clear();
             for (int column = 0; column < 10; column++) {
